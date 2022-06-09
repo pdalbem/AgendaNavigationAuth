@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AgendaNavigationAuth</string>
+    <string name="nome"> NOME: </string>
+    <string name="fone"> TELEFONE: </string>
+    <string name="email"> EMAIL: </string>
+    <string name="salvar"> Salvar </string>
+    <string name="excluir"> Excluir </string>
+    <string name="buscar"> Buscar </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

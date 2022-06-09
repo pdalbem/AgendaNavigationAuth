@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/listaFragment">
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.edu.agendafirestore.activity.LoginFragment"
+        android:label="Login" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="br.edu.agendafirestore.activity.ListaContatosFragment"
+        android:label="Contatos" >
+        <action
+            android:id="@+id/action_ListaToCadastro"
+            app:destination="@id/cadastroFragment" />
+        <action
+            android:id="@+id/action_ListaToDetalhe"
+            app:destination="@id/detalheFragment" />
+        <action
+            android:id="@+id/action_ListaToLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.edu.agendafirestore.activity.CadastroFragment"
+        android:label="Cadastro" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="br.edu.agendafirestore.activity.DetalheFragment"
+        android:label="Detalhe" >
+        <argument
+            android:name="contatoID"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
